@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Potato Farming – Images</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+      }
+      .images-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+      .images-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        background: rgba(15, 23, 42, 0.6);
+      }
+      .images-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+      }
+      .images-header a {
+        color: var(--accent, #6366f1);
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+      .images-header a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="images-header">
+      <h1 style="margin:0;">Smart Potato Farming </h1>
+      <a href="index.html#projects">Back to Projects</a>
+    </div>
+    <div class="images-grid">
+      <img src="images/dashboard.png" alt="dashboard" loading="lazy" />
+      <img src="images/prediction.png" alt="prediction" loading="lazy" />
+      <img src="images/chatbot.png" alt="chatbot" loading="lazy" />
+    </div>
+  </body>
+</html>
