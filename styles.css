@@ -170,15 +170,15 @@ main {
 }
 
 .btn--ghost {
-  border-color: var(--border-subtle);
-  color: var(--text-muted);
-  background: rgba(15, 23, 42, 0.8);
+  border-color: transparent;
+  color: #0b1020;
+  background: linear-gradient(135deg, var(--accent), #22d3ee);
+  box-shadow: 0 16px 35px rgba(59, 130, 246, 0.45);
 }
 
 .btn--ghost:hover {
-  border-color: var(--accent-strong);
-  color: var(--text);
-  background: radial-gradient(circle at top left, var(--accent-soft), #020617 55%);
+  transform: translateY(-1px);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.9);
 }
 
 .about__layout {
@@ -506,9 +506,10 @@ main {
 
   .about__photo {
     order: -1;
-    max-width: 260px;
+    max-width: 240px;
     aspect-ratio: 4 / 5;
-    margin-top: -190px;
+    margin-top: 0;
+    justify-self: center;
   }
 
   .about__grid {
@@ -539,7 +540,7 @@ main {
   }
 
   .about__photo {
-    margin-top: -80px;
+    margin-top: 0;
   }
 
   .contact__list {
